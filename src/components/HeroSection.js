@@ -11,16 +11,13 @@ export default function HeroSection() {
       className="text-center py-24"
     >
       <h1 className="text-5xl font-bold mb-4">Hello, I’m David Jung</h1>
-      <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-6">
-        Thank you for visiting my portfolio! I build modern web applications and interactive tools.
-      </p>
+      <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-6 max-w-3xl mx-auto">
+  Thank you for visiting my portfolio! I build applications with pure passion and love for technology. 
+  I have separate internship experience, however I wanted to showcase my portfolio and highlight some coursework in this site.
+  Work experience can be found in my resume as I do not have photos or code!
+</p>
       <div className="flex justify-center gap-4">
-        <a
-          href="/projects"
-          className="px-6 py-3 bg-black text-white rounded hover:bg-blue-600 transition"
-        >
-          View Projects
-        </a>
+        
         <a
           href="/resume.pdf"
           target="_blank"
