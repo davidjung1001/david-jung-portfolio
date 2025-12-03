@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: "My Portfolio",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       <body className="bg-white text-black antialiased dark:bg-gray-900 dark:text-white">
         <Navbar />
         <main className="min-h-screen">{children}</main>
+        <Analytics />
         <Footer />
       </body>
     </html>
