@@ -12,11 +12,13 @@ export default async function ExperienceDetail({ params }) {
     <div className="max-w-4xl mx-auto py-12 px-4">
       {/* Main header image */}
       {exp.image && (
-        <img
-          src={exp.image}
-          alt={exp.title}
-          className="w-full h-64 object-cover rounded-lg mb-6"
-        />
+        <div className="w-full bg-gray-50 dark:bg-neutral-900 rounded-lg overflow-hidden border border-gray-200 dark:border-neutral-700 mb-6">
+          <img
+            src={exp.image}
+            alt={exp.title}
+            className="w-full h-auto max-h-[500px] object-contain mx-auto"
+          />
+        </div>
       )}
 
       <h1 className="text-4xl font-bold mb-2">{exp.title}</h1>
@@ -44,7 +46,7 @@ export default async function ExperienceDetail({ params }) {
       {/* Project Walkthrough with Images and Captions */}
       {exp.images && exp.images.length > 0 && (
         <div className="mb-6">
-          <h2 className="text-2xl font-semibold mb-4">Project Walkthrough</h2>
+          <h2 className="text-2xl font-semibold mb-4">Walkthrough</h2>
           <div className="space-y-8">
             {exp.images.map((item, index) => (
               <div key={index} className="rounded-lg overflow-hidden border border-gray-200 dark:border-neutral-700">

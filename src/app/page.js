@@ -12,7 +12,7 @@ import { coursework } from "@/lib/coursework";
 
 export default function HomePage() {
   const featuredProjects = projects.slice(0, 3);
-  const recentExperience = experience.slice(0, 3);
+  const recentExperience = experience.slice(0, 4);
   const relevantCoursework = coursework; // Show all coursework
 
   return (

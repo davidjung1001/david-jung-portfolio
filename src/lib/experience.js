@@ -1,5 +1,68 @@
 export const experience = [
-  
+  {
+    slug: "embedded-cybersecurity-engineer-toro",
+    title: "Embedded Cybersecurity Engineer (Internship)",
+    company: "The Toro Company",
+    period: "May 2025 – Aug. 2025",
+    image: "/images/experience/toro.png",
+    images: [
+      {
+        src: "/images/experience/toro-security.png",
+        caption: "As a cybersecurity engineer, I was a part of the software team, developing secure communication protocol and network monitoring."
+      },
+      {
+        src: "/images/experience/bt_capture.png",
+        caption: "Overall BLE capture showing advertising, connection establishment, and attribute access during normal operation."
+      },
+      {
+        src: "/images/experience/bt_no_enc.png",
+        caption: "Finding: Unencrypted Bluetooth Traffic. Specific BLE packet showing unencrypted payload data and exposed device attributes."
+      },
+      {
+        src: "/images/experience/after_encryption.png",
+        caption: "Solution: Encrypted Bluetooth Communication. BLE packet capture after encryption implementation, showing protected payload data."
+      },
+      {
+        src: "/images/experience/portscan.png",
+        caption: "Network Exposure Assessment: Port scan results showing listening services and accessible network interfaces."
+      },
+      {
+        src: "/images/experience/jtr_bruteforce.png",
+        caption: "Controlled Access Testing: Credential brute-force testing to evaluate access controls."
+      },
+      {
+        src: "/images/experience/reverse_shell_terminal.png",
+        caption: "Exploitation Testing: Reverse shell in emulated environment to validate detection and response."
+      },
+      {
+        src: "/images/experience/yocto_custom_layer.png",
+        caption: "Embedded Linux Validation: Custom Yocto layer for security functionality and validation hooks."
+      },
+      {
+        src: "/images/experience/yocto_layer_flags.png",
+        caption: "Build System Validation: Build flags affecting runtime behavior and security posture."
+      },
+      {
+        src: "/images/experience/network_log.png",
+        caption: "Network Monitoring: Activity captured after implementing custom logging layers to provide forensic evidence."
+      },
+      {
+        src: "/images/experience/database_protection.png",
+        caption: "Database Security: Configuration showing Row Level Security (RLS) policies and access controls to protect stored data."
+      }
+    ],
+    summary: "Interned as an embedded security engineer where I developed secure microcontroller communications and implemented defensive solutions following rigorous vulnerability analysis.",
+    tech: ["C/C++", "STM32", "ESP32", "TI Simplelink", "Yocto Project", "Embedded Linux", "Python", "Networking", "BLE", "Supabase"],
+    moreDetails: `
+- Developed and optimized communication protocols for STM32, ESP32, and TI Simplelink microcontrollers to ensure reliable data transfer
+- Conducted deep-dive security analysis of embedded firmware to identify vulnerabilities in wireless stacks and network interfaces
+- Implemented practical cybersecurity solutions, including encrypted communication channels and authenticated pairing, to mitigate identified threats
+- Engineered custom Yocto layers to integrate security monitoring tools like tcpdump into the embedded Linux build system
+- Validated system-wide security by performing controlled exploitation testing, including reverse shells and credential brute-forcing
+- Strengthened backend data integrity by configuring Row Level Security (RLS) and encryption for sensitive IoT device data
+    `,
+    link: "https://www.toro.com"
+  },
   {
     slug: "ai-integrated-tutoring-web-application",
     title: "AI Integrated Tutoring Web Application",
@@ -9,55 +72,47 @@ export const experience = [
     images: [
       {
         src: "/images/experience/ai-tutor-1.png",
-        caption: "This is the main worksheet page. The previews are built using client-side components and called into this server-rendered page. The server rendered page dynamically fetches all courses, sections, and subsections from the PostgreSQL database."
+        caption: "This is the main worksheet page. The previews are built using client-side components and called into this server-rendered page."
       },
       {
         src: "/images/experience/ai-tutor-2.png",
-        caption: `Python with OpenAI is used for problem generation. However, it is not just simple generation.
-        To ensure of quality generation and compatibility with the database and the front end, the prompt is 
-        crafted very carefully to save into a CSV.`
+        caption: "Python with OpenAI is used for problem generation. The prompt is crafted carefully to ensure database compatibility."
       },
       {
         src: "/images/experience/ai-tutor-3.png",
-        caption: `This is an example of a lesson output. It properly uses markdown format and inline text for math and chemistry expressions.`
+        caption: "Example of a lesson output using markdown and inline text for math and chemistry expressions."
       },
       {
         src: "/images/experience/ai-tutor-4.png",
-        caption: `Here is an example of one of the lesson pages, specifically about quadratic equations.
-        It is very important to format the square roots, fractions, and other expressions.
-        All the lesson pages are dynamically generated using Next.js into its own static, server-rendered page.`
+        caption: "Dynamically generated lesson page for quadratic equations using Next.js for high performance."
       },
       {
         src: "/images/experience/ai-tutor-5.png",
-        caption: `Similar to the lessons. These are questions that are generated. 
-        Every 10 is grouped into a set. These are also dynmaically rendered to create it own set.
-        Each subsection has 5 sets, so there are around 900 static pages currently.`
+        caption: "Question sets grouped by subsection, resulting in over 900 static, SEO-friendly pages."
       },
       {
         src: "/images/experience/ai-tutor-6.png",
-        caption: `With the same questions, I made digital modules also an option to track the time and scores.`
+        caption: "Digital modules with built-in timers and scoring to track student progress."
       },
       {
         src: "/images/experience/ai-tutor-7.png",
-        caption: `Authentication was implemented with the help of Supabase. Google OAuth is also added for convenience.`
+        caption: "Authentication and user data management implemented via Supabase and Google OAuth."
       },
       {
         src: "/images/experience/ai-tutor-8.png",
-        caption: `This is small snapshot of the database design. It is designed to reduce redundancies as much as possible
-        and follow best practices.`
+        caption: "Database schema design optimized for scale and data integrity using PostgreSQL."
       }
     ],
     summary: "Built a full-stack tutoring web app with dynamic question generation.",
     tech: ["Python", "Next.js", "OpenAI", "Supabase", "EmailJS"],
     moreDetails: `
-- Generated 1800+ questions using OpenAI in Python with answer choices to dynamically populate modules based on course, sections, and subsections
-- Utilized Supabase (PostgreSQL) for authentication to track progress and store 10,000+ questions, user data, session logs, and subscriptions
+- Generated 1800+ questions using OpenAI in Python with answer choices to dynamically populate modules
+- Utilized Supabase (PostgreSQL) for authentication to track progress and store 10,000+ questions
 - Dynamically rendered data into pages using Next.js framework and ORM SQL queries
 - Built a modular educational site to manage tutoring students and content
     `,
     link: "https://www.stillymathpro.com"
   },
-
   {
     slug: "hackathon-chatbot-language-model-ai",
     title: "Hackathon Chatbot Language Model AI",
@@ -65,38 +120,17 @@ export const experience = [
     period: "Sept. 2025",
     image: "/images/experience/hackathon.png",
     images: [
-      {
-        src: "/images/experience/hackathon-1.png",
-        caption: `Demo of the AI chatbot.`
-      },
-      {
-        src: "/images/experience/hackathon-2.png",
-        caption: `This image is the backend code that is hosted on Render. Backend is built with Python.
-        Pandas DataFrame Agent is used. The green is the agent thinking, based on the input. Then it interacts
-        with the dataset to produce the necessary result. It is important to have proper error handling to
-        not use outside data.`
-      },
-      {
-        src: "/images/experience/hackathon-3.png",
-        caption: `The code shows the backend of the dataframe agent. The data is first processed for better analysis,
-        then fed into the agent along with the llm, which in this was OpenAI.`
-      },
-      {
-        src: "/images/experience/hackathon-4.png",
-        caption: `This is the prompt that it was given, which matches with the columns of the dataframe.
-        Some common and helpful questions were incorporated. FastAPI was used to interact with the Next.js frontend.`
-      },
-      {
-        src: "/images/experience/hackathon-5.png",
-        caption: `The result was checked again to be sure, and rendered in proper format for UI/UX.
-        Tables were also rendered as you can see in the demo.`
-      }
+      { src: "/images/experience/hackathon-1.png", caption: "Demo of the AI chatbot." },
+      { src: "/images/experience/hackathon-2.png", caption: "Backend code hosted on Render using Pandas DataFrame Agent." },
+      { src: "/images/experience/hackathon-3.png", caption: "Backend of the dataframe agent where data is processed for analysis." },
+      { src: "/images/experience/hackathon-4.png", caption: "Prompting logic matching dataframe columns using FastAPI." },
+      { src: "/images/experience/hackathon-5.png", caption: "Properly formatted UI/UX rendering tables from AI results." }
     ],
     summary: "Developed an AI chatbot for analyzing rideshare data.",
     tech: ["Python", "OpenAI", "Pandas", "Next.js"],
     moreDetails: `
-- Built a full-stack web application using real rideshare data to provide insightful responses when prompted
-- Utilized Python backend to build ML/AI models and a Pandas dataframe agent to interact with the SQL database for analysis/predictions
+- Built a full-stack web application using real rideshare data to provide insightful responses
+- Utilized Python backend and a Pandas dataframe agent to interact with the SQL database for analysis/predictions
 - Implemented querying from human language without hallucination, achieving 90% accuracy
 - Deployed backend on Render and frontend on Vercel
     `,
@@ -109,41 +143,20 @@ export const experience = [
     period: "2025",
     image: "/images/experience/soccer-directory.png",
     images: [
-      {
-        src: "/images/experience/soccer-directory-1.png",
-        caption: `This is the home page for the soccer fields. You can search or goto the browse page
-        directly. Or, you can scroll down to see featured fields as well.`
-      },
-      {
-        src: "/images/experience/soccer-directory-2.png",
-        caption: `I use leaflet and geocoding to display the fields on the map.
-        Once the user clicks on a card, it jumps to that field for an interactive view.`
-      },
-      {
-        src: "/images/experience/soccer-directory-3.png",
-        caption: `This is the card for each field. You can view availability to book, or prices if the ownder wants to share.`
-      },
-      {
-        src: "/images/experience/soccer-directory-4.png",
-        caption: `This is just a simple firebase database that dynamically adds the new fields. The images 
-        were uploaded using Cloudinary.`
-      }
+      { src: "/images/experience/soccer-directory-1.png", caption: "Home page with search and browse functionality." },
+      { src: "/images/experience/soccer-directory-2.png", caption: "Interactive map view using Leaflet and geocoding." },
+      { src: "/images/experience/soccer-directory-3.png", caption: "Field card showing availability and pricing." },
+      { src: "/images/experience/soccer-directory-4.png", caption: "Firebase database and Cloudinary integration for field management." }
     ],
-    summary: `I am very passionate about soccer in my personal life, and play weekly.
-        One common issue that we ran into was looking for a field and booking it.
-        Therefore, as a fun project, I built this site!`,
+    summary: "Built a soccer field directory to solve local booking and discovery issues.",
     tech: ["Next.js", "Firebase", "Leaflet", "Cloudinary", "Admin Panel"],
     moreDetails: `
 - Built a full-stack web application using Next.js and Firebase for dynamic field management
 - Implemented filter functionality to search by location, amenities, and availability
-- Added "Claim Field" feature for field owners to submit ownership requests
-- Integrated interactive map with Leaflet and "jump to location" functionality
-- Enabled photo uploads via Cloudinary
+- Integrated interactive map with Leaflet and photo uploads via Cloudinary
 - Built admin functions for managing fields, approvals, and user interactions
     `,
     link: "https://soccerfieldrental.net",
     github: "https://github.com/yourusername/soccer-directory"
-  },
-  // Add more projects here following the same structure
-
+  }
 ];
